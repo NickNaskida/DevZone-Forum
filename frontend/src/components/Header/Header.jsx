@@ -1,16 +1,17 @@
-import React from 'react'
+import {React} from 'react';
+import "./Header.scss";
+
+import SearchBar from '../Header/HeaderSearch/HeaderSearch';
+import HeaderNav from '../Header/HeaderNav/HeaderNav';
+
 
 const Header = () => {
   return (
     <header>
-        <div className="header__inner">
-            <div className="header__search">
-
-            </div>
-            <div className="header__nav">
-                
-            </div>
-        </div>
+      <div className="header__inner">
+          <SearchBar />
+          <HeaderNav />
+      </div>
     </header>
   )
 }

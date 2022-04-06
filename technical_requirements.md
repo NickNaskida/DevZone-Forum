@@ -18,9 +18,9 @@ Suggesting following stack:
     - Alembic for migrations
 * **Frontend**:
     - React
-    - TypeScript
+    - Bootstrap
 
 
 # **4. Design**
 
-Design figma workspace — [Figma Link](https://www.figma.com/file/i8zgacu3TuXtHuXKjfBPHp/DevZone?node-id=0%3A1)
+Design figma workspace — [Figma Project Design Workspace](https://www.figma.com/file/i8zgacu3TuXtHuXKjfBPHp/DevZone?node-id=0%3A1)

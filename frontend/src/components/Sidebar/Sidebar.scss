@@ -1,0 +1,115 @@
+.sidebar {
+    min-height: 100vh;
+    padding: 0px 10px;
+    border-right: 2px solid #293743;
+    grid-area: sidebar;
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        height: 60px;
+
+        &_title {
+            color: #fff;
+            font-size: 26.5px;
+            font-weight: 700;
+            text-decoration: none;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    &__logo {
+        height: 42px;
+    }
+
+    &__nav {
+        list-style: none;
+        padding: 0px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+
+        &_link {
+            display: flex;
+            align-items: center;
+            color: var(--color-sc);
+            text-decoration: none;
+            margin: 6px 0px;
+            
+            &:hover {
+                color: #fff;
+            }
+
+            i {
+                font-size: 18px;
+                margin-right: 10px;
+            }
+        }
+
+        &_item {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            min-height: 44px;
+            padding: 8px 16px;
+            font-size: 15px;
+            border-radius: 9px;
+            transition: color, background-color 0.3s ease;
+
+            &:hover {
+                background-color: var(--color-hover);
+                cursor: pointer;
+                color: #fff;
+            }
+        }
+    }
+
+    &__additional_info {
+        width: 230px;
+        position: absolute;
+        bottom: 10px;
+        text-align: center;
+        color: var(--color-sc);
+
+        a {
+            font-size: 13px;
+            color: var(--color-sc);
+            text-decoration: underline !important;
+    
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }  
+}
+
+.divisor-line {
+    border-bottom: 2px solid #293743;
+    margin: 20px 0px;
+}
+
+
+.sidebar_new_badge {
+    position: absolute;
+    padding: 0.4em 0.6em;
+    right: 14px;
+    background-color: var(--color-blue);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+/*flame icon*/
+.fi-rr-flame {
+    color: var(--color-green);
+}
+
+// .sidebar_nav .active_menu_item, {
+//     background-color: #101b23;
+//     cursor: pointer;
+//     color: #fff;
+// }
