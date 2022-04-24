@@ -1,0 +1,22 @@
+.breadcrumb {
+    margin: 6px 0px;
+    margin-bottom: 1rem;
+
+    li, a, p {
+        font-family: 'Rubik', sans-serif;
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a {
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        color: var(--color-sc);
+    }
+}

@@ -1,12 +1,58 @@
+import { React, useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom'
+
 import './App.css';
+
 import Header from './components/Header/Header'
 import Sidebar from './components/Sidebar/Sidebar'
+import Main from './components/Main/Main'
+
+import { Homepage } from './pages/Homepage';
+import { Forumspage } from './pages/Forumspage';
+import { Whatsnewpage } from './pages/Whatsnewpage';
+import { Memberspage } from './pages/Memberspage';
+import { Notfound } from './pages/Notfound404';
+
 
 function App() {
+  const [isOpen, setIsOpen] = useState(true);
+
+  const toggleSidebar = () => {
+    setIsOpen((prev) => !prev)
+    localStorage.setItem("SidebarIsOpen", !isOpen);
+  }
+
+  useEffect(() => {
+    const sidebarIsOpen = localStorage.getItem("SidebarIsOpen");
+        
+    sidebarIsOpen === null && localStorage.setItem("SidebarIsOpen", JSON.stringify(true)); 
+    
+    if (sidebarIsOpen != null) {
+      if (!JSON.parse(sidebarIsOpen)) {
+        setIsOpen(false)
+      }
+    } 
+  }, [])
+
   return (
-    <div className="container">
+    <div 
+      className="container"
+      style={{
+        gridTemplateColumns: isOpen ? "240px calc(100% - 240px)" : "76px calc(100% - 76px)"
+      }}
+    >
+      <Routes>
+        <Route path="/" element={<Main />}>
+          <Route index element={<Homepage />} />
+          <Route path="forums" element={<Forumspage />} />
+          <Route path="whats-new" element={<Whatsnewpage />} />
+          <Route path="members" element={<Memberspage />} />
+          <Route path="*" element={<Notfound />} />
+        </Route>
+      </Routes>
+
       <Header />
-      <Sidebar />
+      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
     </div>
   );
 }

@@ -1,8 +1,11 @@
 .sidebar {
+    position: relative;
     min-height: 100vh;
     padding: 0px 10px;
     border-right: 2px solid #293743;
     grid-area: sidebar;
+    z-index: 10;
+    // transition: all 0.3s ease;
 
     &__header {
         display: flex;
@@ -10,6 +13,7 @@
         align-items: center;
         gap: 10px;
         height: 60px;
+        padding: 0px 6px;
 
         &_title {
             color: #fff;
@@ -56,9 +60,8 @@
             display: flex;
             align-items: center;
             min-height: 44px;
-            padding: 8px 16px;
             font-size: 15px;
-            border-radius: 9px;
+            border-radius: 8px;
             transition: color, background-color 0.3s ease;
 
             &:hover {
@@ -66,6 +69,12 @@
                 cursor: pointer;
                 color: #fff;
             }
+        }
+
+        a.active &_item {
+            background-color: var(--color-hover);
+            cursor: pointer;
+            color: #fff;  
         }
     }
 
@@ -79,13 +88,36 @@
         a {
             font-size: 13px;
             color: var(--color-sc);
-            text-decoration: underline !important;
+            text-decoration: none;
+            transition: all 0.1s ease;
     
             &:hover {
+                color: #fff;
                 cursor: pointer;
             }
         }
-    }  
+    }
+    
+    &__toggle_butt {
+        position: absolute;
+        top: 15px;
+        right: -15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        border: 2px solid #293743;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 16px;
+        background-color: var(--color-bg-main);
+        padding: 0;
+        
+        i {
+            transition: all 0.5s ease;
+        }
+    }
 }
 
 .divisor-line {
@@ -101,15 +133,19 @@
     background-color: var(--color-blue);
     font-size: 11px;
     font-weight: 500;
+
+    &_closed {
+        position: absolute;
+        top: 10px;
+        right: 9px;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background-color: var(--color-blue);
+    }
 }
 
 /*flame icon*/
-.fi-rr-flame {
+.fi-rr-flame, .fi-sr-flame {
     color: var(--color-green);
 }
-
-// .sidebar_nav .active_menu_item, {
-//     background-color: #101b23;
-//     cursor: pointer;
-//     color: #fff;
-// }

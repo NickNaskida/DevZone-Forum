@@ -36,44 +36,73 @@ input {
 
 .container {
   display: grid;
-  grid-template-columns: 240px calc(100% - 240px);
+  /* grid-template-columns: 240px calc(100% - 240px); */
   grid-template-rows: 60px calc(100% - 60px);
   grid-template-areas: 
     "sidebar header"
     "sidebar main";
   max-width: 1400px;
   margin: 0 auto;
+  transition: all 0.3s ease;
 }
 
-/* ============ Bootstrap ============ */
-.tooltip {
-  font-family: 'Rubik', sans-serif;
-  font-size: 12px;
-	font-weight: 400;
-  /*next 2 lines of code fixes lib bug connected with positioning*/
-  top: 0;
-  left: 0;	
+/*=============Buttons==============*/
+.btn-green-3d {
+  display: block;
+  width: fit-content;
+  border-radius: 8px;
+	padding: 8px 30px;
+	background-color: var(--color-green);
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-bottom: 4px solid #487214;
+	-webkit-animation: pulsate-fwd 0.5s ease-in-out 1 both;
+	        animation: pulsate-fwd 0.5s ease-in-out 1 both; 
 }
 
-/*==========scrollbar===========*/
-::-webkit-scrollbar {
-  width: 20px;
+.btn-green-3d:hover {
+  color: #fff;
+  box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.3);
 }
 
-::-webkit-scrollbar-track {
-  background-color: transparent;
+.btn-green-3d:active {
+  border-bottom: none;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #354c5f;
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
+/*============Animations============*/
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: #5f89ab;
-}
+
+
 
 
 

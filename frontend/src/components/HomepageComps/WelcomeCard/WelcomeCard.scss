@@ -1,0 +1,30 @@
+.welcome__card {
+	background-color: #202e39;
+	border-radius: 9px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 20px 40px;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.24);
+
+  &_text {
+    width: calc(100% - 220px);
+    padding: 20px 10px;
+    padding-right: 40px;
+
+    h6 {
+      color: #7e8b95;
+      margin-bottom: 30px;
+    }
+  }
+
+  &_pic {
+    width: 220px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+}

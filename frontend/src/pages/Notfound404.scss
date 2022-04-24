@@ -1,0 +1,17 @@
+.wrapper_404 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+
+  small {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+
+
+
