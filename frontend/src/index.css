@@ -47,7 +47,7 @@ input {
 }
 
 /*=============Buttons==============*/
-.btn-green-3d {
+.btn-green {
   display: block;
   width: fit-content;
   border-radius: 8px;
@@ -56,20 +56,45 @@ input {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
-  transition: all 0.2s ease;
-  border-bottom: 4px solid #487214;
+  transition: all 0.1s ease;
+  border: none;
 	-webkit-animation: pulsate-fwd 0.5s ease-in-out 1 both;
-	        animation: pulsate-fwd 0.5s ease-in-out 1 both; 
+	        animation: pulsate-fwd 0.5s ease-in-out 1 both;        
+}
+
+.btn-green:hover {
+  color: #fff;
+}
+
+.btn-green-3d {
+  position: relative;
+  display: block;
+  width: fit-content;
+  border-radius: 8px;
+	padding: 8px 30px;
+	background-color: var(--color-green);
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.1s ease;
+  border: none;
+  box-shadow: 0 4px 0 0 rgb(72, 114, 20);
+	-webkit-animation: pulsate-fwd 0.5s ease-in-out 1 both;
+	        animation: pulsate-fwd 0.5s ease-in-out 1 both;        
 }
 
 .btn-green-3d:hover {
+  top: 1px;
   color: #fff;
-  box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 0 0 rgb(72, 114, 20);
 }
 
 .btn-green-3d:active {
-  border-bottom: none;
+  top: 3px;
+  box-shadow: none;
 }
+
+
 
 /*============Animations============*/
 @-webkit-keyframes pulsate-fwd {

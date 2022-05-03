@@ -124,7 +124,7 @@ const Sidebar = (props) => {
           </Tooltip>
         </NavLink>
 
-        <NavLink to="/members" className="sidebar__nav_link">
+        <NavLink to="/members/" className="sidebar__nav_link">
           <Tooltip
             title={isOpen ? "" : "Members"}
             placement="right"
@@ -149,9 +149,9 @@ const Sidebar = (props) => {
           </Tooltip>
         </NavLink>
 
-        <NavLink to="/settings" className="sidebar__nav_link">
+        <NavLink to="/members/NickNaskida" className="sidebar__nav_link">
           <Tooltip
-            title={isOpen ? "" : "Settings"}
+            title={isOpen ? "" : "Profile"}
             placement="right"
             componentsProps={{
               tooltip: {
@@ -166,9 +166,41 @@ const Sidebar = (props) => {
               className="sidebar__nav_item"
               style={{padding: isOpen ? "8px 15px" : "8px 13px"}}            
             >
-              <i className="fi fi-rr-settings"></i>
+              <i className="fi fi-rr-user"></i>
               {
-                isOpen && (<span>Settings</span>)
+                isOpen && (<span>Profile</span>)
+              }  
+            </li>
+          </Tooltip>
+        </NavLink>
+
+        <NavLink to="/staff" className="sidebar__nav_link">
+          <Tooltip
+            title={isOpen ? "" : "Staff"}
+            placement="right"
+            componentsProps={{
+              tooltip: {
+                sx: {
+                  bgcolor: 'rgba(0, 0, 0, 0.8)',
+                  fontFamily: 'Rubik, sans-serif;'
+                },
+              },
+            }}
+          >
+            <li
+              className="sidebar__nav_item"
+              style={{padding: isOpen ? "8px 15px" : "8px 13px"}}            
+            >
+              
+              {
+                isOpen ? <>
+                  <i className="fi fi-rr-id-badge"></i>
+                  <span>Staff</span> 
+                  <span className="badge rounded-pill sidebar_new_badge">21</span>
+                </> : <>
+                  <i className="fi fi-rr-id-badge"></i>
+                  <span className="sidebar_new_badge_closed"></span>
+                </>
               }  
             </li>
           </Tooltip>
@@ -176,9 +208,9 @@ const Sidebar = (props) => {
 
         <div className="divisor-line"></div>
      
-        <NavLink to="/logout" className="sidebar__nav_link">
+        <NavLink to="/sign-out" className="sidebar__nav_link">
           <Tooltip
-            title={isOpen ? "" : "Logout"}
+            title={isOpen ? "" : "Sign Out"}
             placement="right"
             componentsProps={{
               tooltip: {
@@ -195,15 +227,15 @@ const Sidebar = (props) => {
             >
               <i className="fi fi-rr-sign-out"></i>
               {
-                isOpen && (<span>Logout</span>)
+                isOpen && (<span>Sign Out</span>)
               }     
             </li>
           </Tooltip>
         </NavLink>
 
-        <NavLink to="/login" className="sidebar__nav_link">
+        <NavLink to="/sign-in" className="sidebar__nav_link">
           <Tooltip
-            title={isOpen ? "" : "Login"}
+            title={isOpen ? "" : "Sign In"}
             placement="right"
             componentsProps={{
               tooltip: {
@@ -218,40 +250,15 @@ const Sidebar = (props) => {
               className="sidebar__nav_item"
               style={{padding: isOpen ? "8px 15px" : "8px 13px"}}            
             >
-              <i class="fi fi-rr-sign-in"></i>
+              <i className="fi fi-rr-sign-in"></i>
               {
-                isOpen && (<span>Login</span>)
+                isOpen && (<span>Sign In</span>)
               }     
             </li>
           </Tooltip>
         </NavLink>
-
-        <NavLink to="/sign-up" className="sidebar__nav_link">
-          <Tooltip
-            title={isOpen ? "" : "Sign Up"}
-            placement="right"
-            componentsProps={{
-              tooltip: {
-                sx: {
-                  bgcolor: 'rgba(0, 0, 0, 0.8)',
-                  fontFamily: 'Rubik, sans-serif;'
-                },
-              },
-            }}
-          >
-            <li
-              className="sidebar__nav_item"
-              style={{padding: isOpen ? "8px 15px" : "8px 13px"}}            
-            >
-              <i class="fi fi-rr-sign-in"></i>
-              {
-                isOpen && (<span>Sign Up</span>)
-              }     
-            </li>
-          </Tooltip>
-        </NavLink>
-			</ul>
-
+      </ul>
+      
 			<div className="sidebar__additional_info">
         {
           isOpen && <>				

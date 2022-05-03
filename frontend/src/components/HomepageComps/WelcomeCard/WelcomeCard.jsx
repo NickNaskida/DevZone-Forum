@@ -23,7 +23,7 @@ const WelcomeCard = () => {
         <h1>Greetings {ip}</h1>
         <br />
         <h6>DevZone is a community of software developers or people interested in computer science, where they help each other, grow their careers, broaden their horizons and have fun.</h6>
-        <Link className="btn-green-3d" to="/login">Join Community</Link>
+        <Link className="btn-green-3d" to="/sign-in">Join Community</Link>
       </div>
       <div className="welcome__card_pic">
         <img src="/img/chat.png" alt="Chat" />

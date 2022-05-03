@@ -1,0 +1,17 @@
+.homepage__wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: calc(100% - 360px) 320px;
+  grid-gap: 40px;
+
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.divisor_line {
+  height: 1px;
+  background-color: #293743;
+  margin: 25px 0px;
+}

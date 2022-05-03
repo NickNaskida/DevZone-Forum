@@ -7,11 +7,10 @@ import Header from './components/Header/Header'
 import Sidebar from './components/Sidebar/Sidebar'
 import Main from './components/Main/Main'
 
-import { Homepage } from './pages/Homepage';
-import { Forumspage } from './pages/Forumspage';
-import { Whatsnewpage } from './pages/Whatsnewpage';
-import { Memberspage } from './pages/Memberspage';
-import { Notfound } from './pages/Notfound404';
+import { Homepage } from './pages/Homepage/Homepage';
+import { ForumsThreads } from './pages/Forums/ForumsThreads/ForumsThreads';
+import { SignOut } from './pages/Auth/SignOut/SignOut';
+import { Notfound } from './pages/Notfound404/Notfound404';
 
 
 function App() {
@@ -44,9 +43,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />}>
           <Route index element={<Homepage />} />
-          <Route path="forums" element={<Forumspage />} />
-          <Route path="whats-new" element={<Whatsnewpage />} />
-          <Route path="members" element={<Memberspage />} />
+          <Route path="forums" element={<ForumsThreads />} />
+          <Route path="sign-out" element={<SignOut />} />
           <Route path="*" element={<Notfound />} />
         </Route>
       </Routes>
