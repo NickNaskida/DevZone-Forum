@@ -13,8 +13,8 @@
     align-items: center;
     padding: 40px;
     background-color: var(--color-bg-card);
-    border-radius: 8px;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.24);
+    border-radius: var(--border-rad);
+    box-shadow: var(--card-shadow);
   }
 
   &__img {

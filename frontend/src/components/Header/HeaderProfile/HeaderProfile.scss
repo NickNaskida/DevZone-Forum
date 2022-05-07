@@ -1,0 +1,35 @@
+.profile_dropdown {
+  &_header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-decoration: none;
+    width: 270px;
+    padding: 10px;
+    border-radius: var(--border-rad);
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-hover)
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 24px;
+
+      span {
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+      }
+
+      small {
+        font-size: 13px;
+        color: var(--color-sc);
+        line-height: initial;
+      }
+    }
+  }
+}

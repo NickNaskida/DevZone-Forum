@@ -1,0 +1,12 @@
+.dropdown_menu {
+  position: absolute;
+  right: 5px;
+  top: 60px;
+  min-width: 300px;
+  max-height: calc(100vh - 120px);
+  padding: 15px;
+  overflow-y: auto;
+  background-color: var(--color-bg-card);
+  border-radius: var(--border-rad);
+  box-shadow: var(--card-shadow);
+}

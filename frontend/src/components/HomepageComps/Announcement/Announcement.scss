@@ -1,14 +1,14 @@
 .announcement {
 	margin-bottom: 1rem;
 	background-color: var(--color-bg-card);
-	border-radius: 8px;
+	border-radius: var(--border-rad);
 	padding: 10px 20px;
-	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.24);
+	box-shadow: var(--card-shadow);
 
   i {
     padding: 5px 10px;
     background-color: #101b23;
-    border-radius: 8px;
+    border-radius: var(--border-rad);
   }
 }
 

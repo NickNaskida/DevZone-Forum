@@ -1,4 +1,5 @@
 header {
+  position: relative;
   height: 60px;
   display: flex;
   align-items: center;
@@ -25,7 +26,7 @@ header {
     height: 40px;
     width: 320px;
     background: #24333f;
-    border-radius: 8px;
+    border-radius: var(--border-rad);
     padding: 10px;
     transition: all 0.2s ease;
   }
@@ -80,15 +81,11 @@ header {
   border: 2px solid #24333f;
   border-radius: 50%;
   transition: all 0.2s ease;
-}
 
-.nav_butt:hover {
-  color: #fff;
-  cursor: pointer;
-}
-
-.nav_butt:active {
-  background-color: #24333f;
+  &:hover {
+    color: #fff;
+    cursor: pointer;
+  }
 }
 
 .notify-badge {

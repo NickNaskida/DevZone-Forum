@@ -124,7 +124,7 @@ const Sidebar = (props) => {
           </Tooltip>
         </NavLink>
 
-        <NavLink to="/members/" className="sidebar__nav_link">
+        <NavLink to="/members" className="sidebar__nav_link">
           <Tooltip
             title={isOpen ? "" : "Members"}
             placement="right"
@@ -144,31 +144,6 @@ const Sidebar = (props) => {
               <i className="fi fi-rr-users"></i>
               {
                 isOpen && (<span>Members</span>)
-              }  
-            </li>
-          </Tooltip>
-        </NavLink>
-
-        <NavLink to="/members/NickNaskida" className="sidebar__nav_link">
-          <Tooltip
-            title={isOpen ? "" : "Profile"}
-            placement="right"
-            componentsProps={{
-              tooltip: {
-                sx: {
-                  bgcolor: 'rgba(0, 0, 0, 0.8)',
-                  fontFamily: 'Rubik, sans-serif;'
-                },
-              },
-            }}
-          >
-            <li
-              className="sidebar__nav_item"
-              style={{padding: isOpen ? "8px 15px" : "8px 13px"}}            
-            >
-              <i className="fi fi-rr-user"></i>
-              {
-                isOpen && (<span>Profile</span>)
               }  
             </li>
           </Tooltip>

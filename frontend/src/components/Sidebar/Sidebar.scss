@@ -5,7 +5,14 @@
     border-right: 2px solid #293743;
     grid-area: sidebar;
     z-index: 10;
-    // transition: all 0.3s ease;
+    
+    @media (max-width: 1420px) {
+        padding: 0px 15px !important;
+    }
+
+    @media (max-width: 1020px) {
+        display: none;
+    }
 
     &__header {
         display: flex;
@@ -61,7 +68,7 @@
             align-items: center;
             min-height: 44px;
             font-size: 15px;
-            border-radius: 8px;
+            border-radius: var(--border-rad);
             transition: color, background-color 0.3s ease;
 
             &:hover {
@@ -116,6 +123,10 @@
         
         i {
             transition: all 0.5s ease;
+        }
+
+        @media (max-width: 1420px) {
+            display: none;
         }
     }
 }
