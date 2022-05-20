@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Badge} from 'react-bootstrap';
+import { Badge } from 'react-bootstrap';
 import { AnimatePresence } from "framer-motion"
 
 import "./HeaderNotify.scss";
@@ -48,14 +48,14 @@ const HeaderNotify = () => {
               <Box>
                 <DropdownMenu>
                   <div className="notify_dropdown">
-                    Notifications
-                    <br /><br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolore eveniet, ullam fuga assumenda accusamus perferendis eos laborum non ut, laboriosam excepturi, voluptatibus sunt obcaecati possimus optio ex. Ipsam, doloremque!
-                    Blanditiis numquam cumque amet reprehenderit, quae rerum qui, quo similique magnam fugit dicta dolorum libero? Eaque architecto blanditiis, illum laborum optio vero itaque, numquam labore quam facere fuga ullam soluta.
-                    Adipisci sequi corrupti sapiente quasi aperiam autem corporis non. Dolores sit ipsam officia animi consectetur illo quo esse assumenda suscipit, repellendus ut quae quia illum. A commodi delectus aliquam doloribus?
-                    Dicta nesciunt atque vero reprehenderit harum asperiores placeat ipsam, esse temporibus labore tempora et commodi iusto. Rem nostrum excepturi odit maiores sint adipisci. Earum voluptas, nobis qui voluptatem quaerat laudantium.
-                    Vel dolores tenetur minus repellat, cum provident veniam porro saepe nobis suscipit fugit earum beatae nemo blanditiis corrupti a iste? Ipsum voluptate quia debitis in omnis earum itaque explicabo ex!
-                    Ipsum, quos est atque voluptatibus, inventore, quas reiciendis neque dolor voluptates totam recusandae labore. Saepe ex, earum ratione a accusamus possimus excepturi provident consequatur quam, totam dolore tenetur voluptate illo!
+                    <h4>Notifications</h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum labore, autem natus quo iste nihil commodi debitis doloribus ducimus deserunt, incidunt, placeat ab repudiandae accusantium totam vero quibusdam eveniet quas!
+                    Impedit qui voluptatibus deleniti accusantium veritatis, aspernatur amet asperiores eum facilis cum. Laboriosam dicta accusamus doloremque ducimus architecto praesentium veniam commodi incidunt perspiciatis id rerum, suscipit saepe fuga nesciunt repellat?
+                    Adipisci, expedita. Aperiam cumque, sed adipisci mollitia quis maxime nisi quo deserunt. Est iusto earum natus? Aperiam sunt error reiciendis, hic tenetur porro obcaecati similique autem quidem amet earum ullam!
+                    Nostrum repudiandae est alias fugiat eligendi deleniti recusandae quibusdam corrupti hic fuga! Saepe provident neque tenetur harum eaque vel reprehenderit iusto, et molestiae dolor iste odio numquam repellendus pariatur rem?
+                    Distinctio voluptate totam suscipit recusandae omnis dolorem. A, fugiat ipsa! Voluptatum ut ullam nostrum, quasi repellendus est architecto voluptate iste impedit iure ipsam cupiditate eligendi distinctio, eos delectus cum harum!
+                    Praesentium sequi numquam ex incidunt tempora aut, repellat, illo sint iste enim illum nostrum corporis asperiores dolore quod mollitia soluta quo ullam aliquid commodi in, sed dolores tempore qui. Unde.
+                    Est ducimus saepe aspernatur id odio tenetur iusto nemo voluptas perspiciatis, hic, eligendi beatae labore facilis dolor a doloribus deserunt fugit placeat suscipit molestiae? Sapiente dolorem ab corporis id consequuntur?
                   </div>
                 </DropdownMenu>
               </Box>  

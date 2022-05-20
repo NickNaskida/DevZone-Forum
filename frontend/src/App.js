@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom'
+import { AnimatePresence } from "framer-motion"
 
 import './App.css';
 
@@ -50,7 +51,9 @@ function App() {
       </Routes>
 
       <Header />
-      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+      <AnimatePresence>
+        <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+      </AnimatePresence>
     </div>
   );
 }

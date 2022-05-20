@@ -4,6 +4,8 @@ import axios from 'axios'
 
 import './WelcomeCard.scss';
 
+import ClipLoader from "react-spinners/ClipLoader";
+
 
 const WelcomeCard = () => {
   const [ip, setIP] = useState('');
@@ -20,7 +22,9 @@ const WelcomeCard = () => {
   return (
     <div className="welcome__card">
       <div className="welcome__card_text">
-        <h1>Greetings {ip}</h1>
+        <h1>
+          Greetings {ip ? ip : <ClipLoader color={"#70b01f"} size={25} />}
+          </h1>
         <br />
         <h6>DevZone is a community of software developers or people interested in computer science, where they help each other, grow their careers, broaden their horizons and have fun.</h6>
         <Link className="btn-green-3d" to="/sign-in">Join Community</Link>

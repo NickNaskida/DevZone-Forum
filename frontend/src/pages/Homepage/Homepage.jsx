@@ -34,6 +34,10 @@ const Homepage = () => {
           At, labore minus reprehenderit corrupti esse aliquid sed! Commodi, molestiae autem assumenda, non exercitationem necessitatibus impedit quia ad odio magni officiis dolor. Voluptatibus porro ut, ea fugiat molestiae nisi quas.
         </div>
         <div className="divisor_line"></div>
+        <div className="homepage__footer">
+          <div><i className="fal fa-copyright"></i> DevZone 2022</div>
+          <div>Developer: <a href="https://github.com/NickNaskida">Nikoloz Naskidashvili</a></div>
+        </div>
       </section>
       <aside>
         <AccountCard />
@@ -51,6 +55,7 @@ const Homepage = () => {
           Nesciunt fugiat iste tempora eius pariatur eaque, reprehenderit dolorum corporis cupiditate autem. Sint unde vitae voluptas architecto animi accusamus minima culpa tempora tenetur minus, modi quam maiores voluptate aliquid nostrum!
         </div>
         <div className="divisor_line"></div>
+        <center>19-May-2022 20:40</center>
       </aside>
     </div>   
   )

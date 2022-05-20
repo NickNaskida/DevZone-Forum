@@ -1,14 +1,33 @@
-.homepage__wrapper {
-  width: 100%;
-  display: grid;
-  grid-template-columns: calc(100% - 360px) 320px;
-  grid-gap: 40px;
+.homepage {
+  &__wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: calc(100% - 360px) 320px;
+    grid-gap: 40px;
 
-  aside {
+    aside {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    
+    a {
+      color: var(--color-sc);
+      text-decoration: none;
+
+      &:hover {
+        color: #fff;
+      }
+    }
   }
 }
+  
 
 .divisor_line {
   height: 1px;
