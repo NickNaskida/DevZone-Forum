@@ -1,0 +1,56 @@
+.card {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0px;
+  }
+
+  &__signin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--color-bg-card);
+    border-radius: var(--border-rad);
+    box-shadow: var(--card-shadow);
+  }
+}
+
+.signin_social {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+
+  &_butt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 45px;
+    border-radius: var(--border-rad);
+    transition: all 0.3s ease;
+
+    &:nth-child(1) {
+      background-color: #fff;    
+    }
+
+    &:nth-child(2) {
+      background-color: #1877f2;
+    }
+
+    &:nth-child(3) {
+      background-color: #000;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.signin_divisor {
+  margin: 1rem 0;
+}

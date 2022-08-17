@@ -1,4 +1,4 @@
-import React, { useState, useEffect }from 'react'
+import React, { useState, useEffect } from 'react'
 
 import './SignOut.scss';
 
@@ -11,7 +11,7 @@ const SignOut = () => {
   const ImageLoaded = useEffect(() => {
     setTimeout(() => {
       setLoaded(true);
-    }, 1500)
+    }, 500)
   })
 
   return (

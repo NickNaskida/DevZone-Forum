@@ -70,7 +70,7 @@ const Sidebar = (props) => {
 
         <NavLink to="/forums" className="sidebar__nav_link">
           <Tooltip
-            title={isOpen ? "" : "Forums"}
+            title={isOpen ? "" : "Forums (4)"}
             placement="right"
             componentsProps={{
               tooltip: {
@@ -151,7 +151,7 @@ const Sidebar = (props) => {
 
         <NavLink to="/staff" className="sidebar__nav_link">
           <Tooltip
-            title={isOpen ? "" : "Staff"}
+            title={isOpen ? "" : "Staff (21)"}
             placement="right"
             componentsProps={{
               tooltip: {

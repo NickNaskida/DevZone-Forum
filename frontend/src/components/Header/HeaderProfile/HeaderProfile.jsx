@@ -57,7 +57,13 @@ const HeaderProfile = () => {
                             <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</small>
                           </div>
                         </Link>
+
+                        <div className="profile_dropdown_header_status">
+                          Status
+                        </div>
                       </div>
+
+                      <div className="profile_dropdown_divisor"></div>
 
                       <div className="profile_dropdown_menu">
                         <div className="profile_dropdown_menu_mini">
@@ -68,41 +74,18 @@ const HeaderProfile = () => {
                             <i className="fi fi-rr-bookmark"></i> Saved
                           </Link>
                           <Link to="/account" className="profile_dropdown_menu_mini_card" onClick={() => setIsOpen(false)}>
-                          <i className="fi fi-rr-settings"></i> Account
+                            <i className="fi fi-rr-settings"></i> Account
                           </Link>
                           <Link to="/privacy" className="profile_dropdown_menu_mini_card" onClick={() => setIsOpen(false)}>
-                          <i class="fi fi-rr-shield"></i> Privacy
+                            <i className="fi fi-rr-shield"></i> Privacy
                           </Link>
                           <Link to="/security" className="profile_dropdown_menu_mini_card" onClick={() => setIsOpen(false)}>
-                          <i class="fi fi-rr-key"></i> Security
+                            <i className="fi fi-rr-key"></i> Security
                           </Link>
-                          <Link to="" className="profile_dropdown_menu_mini_card" onClick={() => setIsOpen(false)}>
-                            
+                          <Link to="/sign-out" className="profile_dropdown_menu_mini_card" onClick={() => setIsOpen(false)}>
+                            <i className="fi fi-rr-sign-out"></i> Sign Out
                           </Link>
                         </div>
-
-                        <ul>
-                          <Link
-                            to=""
-                            className="profile_dropdown_menu_link"
-                            onClick={() => setIsOpen(false)}
-                          >
-                            <li className="profile_dropdown_menu_item">
-                              -
-                            </li>
-                          </Link>
-
-                          <Link
-                            to=""
-                            className="profile_dropdown_menu_link"
-                            onClick={() => setIsOpen(false)}
-                          >
-                            <li className="profile_dropdown_menu_item">
-                              <i className="fi fi-rr-sign-out"></i>
-                              <span>Sign Out</span>
-                            </li>
-                          </Link>
-                        </ul>
                       </div>
 
                       <div className="profile_dropdown_footer">

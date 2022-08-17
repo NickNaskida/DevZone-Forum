@@ -10,7 +10,12 @@ import Main from './components/Main/Main'
 
 import { Homepage } from './pages/Homepage/Homepage';
 import { ForumsThreads } from './pages/Forums/ForumsThreads/ForumsThreads';
+
+// Auth
+import { SignIn } from './pages/Auth/SignIn/SignIn';
 import { SignOut } from './pages/Auth/SignOut/SignOut';
+
+// Error
 import { Notfound } from './pages/Notfound404/Notfound404';
 
 
@@ -45,6 +50,7 @@ function App() {
         <Route path="/" element={<Main />}>
           <Route index element={<Homepage />} />
           <Route path="forums" element={<ForumsThreads />} />
+          <Route path="sign-in" element={<SignIn />} />
           <Route path="sign-out" element={<SignOut />} />
           <Route path="*" element={<Notfound />} />
         </Route>
