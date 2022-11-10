@@ -237,7 +237,7 @@ const Sidebar = (props) => {
 			<div className="sidebar__additional_info">
         {
           isOpen && <>				
-			      <Link to="">Privacy Policy</Link> • <Link to="">Contact Us</Link> <br /> <Link to="">Terms of Use</Link> • <Link to="">Help</Link>
+			      <Link to="">Privacy Policy</Link> • <Link to="">Terms of Use</Link> <br /> <Link to="">Help</Link>
           </>
         }  
       </div>

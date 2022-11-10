@@ -64,8 +64,6 @@ input {
   font-weight: 500;
   transition: all 0.1s ease;
   border: none;
-	-webkit-animation: pulsate-fwd 0.5s ease-in-out 1 both;
-	        animation: pulsate-fwd 0.5s ease-in-out 1 both;        
 }
 
 .btn-green:hover {

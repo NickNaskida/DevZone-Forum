@@ -89,7 +89,7 @@ const HeaderProfile = () => {
                       </div>
 
                       <div className="profile_dropdown_footer">
-                        <Link to="">Privacy Policy</Link> • <Link to="">Terms of Use</Link> • <Link to="">Contact Us</Link> • <Link to="">Help</Link> • DevZone 2022
+                        <Link to="">Privacy Policy</Link> • <Link to="">Terms of Use</Link> • <Link to="">Help</Link> <br /> DevZone 2022
                       </div>
                     </div>
                   </DropdownMenu>
